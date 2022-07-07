@@ -1,9 +1,12 @@
 import puppeteer from "puppeteer";
+import dotenv from "dotenv";
 
 import getRentalHousePostIds from "./utils/getRentalHousePostIds.js";
 import getRentalHouseInfo from "./utils/getRentalHouseInfo.js";
 import genHouseInfoStr from "./utils/genHouseInfoStr.js";
 import lineNotify from "./utils/lineNotify.js";
+
+dotenv.config();
 
 const main = async () => {
   try {

@@ -1,7 +1,4 @@
 import cheerio from "cheerio";
-import dotenv from "dotenv";
-
-dotenv.config();
 
 const getRentalHousePostIds = async (browser) => {    
     const page = await browser.newPage();
